@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "CustomBackground",
+    "description": "Just adding random bancground on google for fun!",
+    "version": "1",
+    "icons": {
+        "16": "/images/image-16.png",
+        "48": "/images/image-48.png",
+        "128": "/images/image-128.png"
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "/images/image-16.png",
+            "48": "/images/image-48.png",
+            "128": "/images/image-128.png"
+        }
+    },
+    "content_scripts": [{
+        "matches": ["https://www.google.com/"],
+        "css": ["main.css"]
+    }]
+}
